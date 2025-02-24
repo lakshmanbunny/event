@@ -1,0 +1,324 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #f0f8ff; /* Alice Blue background */
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4CAF50; /* Green background */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b !important; /* Yellow color on hover */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Animated Section */
+.animatedSection {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 20px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    color: #333;
+    overflow: hidden;
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 12px;
+    background-color: #80deea; /* Cyan background */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+.rectangle.right {
+    transform: translateX(100%);
+}
+
+.rectangle.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.circleImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffeb3b; /* Yellow background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+}
+
+.textContainer {
+    font-size: 20px;
+    padding: 0 20px;
+    margin-left: 45px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* Achievements Section */
+.achievementsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    text-align: center;
+}
+
+.achievementsHeading {
+    font-size: 50px;    
+    font-weight: bold;
+    color: #00796b; /* Teal color */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+.achievementsHeading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Alumni Section */
+.alumniSection {
+    padding: 100px 20px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    text-align: center;
+    color: #333;
+}
+
+.alumniHeading {
+    color: #00796b;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.alumniHeading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alumniContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.alumniCard {
+    background-color: #80deea; /* Cyan background */
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center; 
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.alumniCard:hover {
+    box-shadow: 0 16px 36px rgba(1, 1, 0.5, 0.2); 
+    border-radius: 30px;
+    background-color: #71c8d3;
+    /* Enhance box shadow on hover */
+}
+
+.alumniCard img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.alumniCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.alumniCard p {
+    font-size: 1rem;
+    color: #00796b; /* Teal color */
+}
+
+.alumniCard.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 12px; /* Rounded corners for images */
+    width: 100%;
+    height: auto;
+}
+
+.eventsHeading {
+    text-align: center;
+    color: #00796b;
+    font-size: 3rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4CAF50; /* Green background */
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+    color: #cddc39; /* Lime color */
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #cddc39; /* Lime color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffffff;
+}
+
+.footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.footer .text-center p {
+    margin: 20px 0 0;
+    font-size: 0.9em;
+}
+
+/* Registration Form Styling */
+.registrationFormSection {
+    padding: 40px 20px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    margin-top: 40px;
+}
+
+.registrationFormSection h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.registrationFormSection form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.registrationFormSection .form-label {
+    font-weight: bold;
+}
+
+.registrationFormSection .btn-primary {
+    background-color: #4CAF50; /* Green background */
+    border-color: #4CAF50;
+}
+
+.registrationFormSection .btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.mb-3 {
+    color: #333;
+}
+
+/* About Us Section */
+.aboutUsSection {
+    padding: 100px 20px;
+    background-color: #e0f7fa; /* Light Cyan background */
+    text-align: center;
+    color: #333;
+}
+
+.aboutUsHeading {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.aboutUsHeading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+h3{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
